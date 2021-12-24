@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  top: 0px;
+  position: sticky;
+  /* width: 1521px; */
+}
+#navbar::before {
+  content: "";
+  background-color: #8b6161;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* Logo and Images */
+
+#logo {
+  margin: 10px 10px;
+}
+#logo img {
+  margin: 3px 30px;
+  height: 50px;
+}
+
+/* Navigation Bar : List Styling */
+#navbar ul {
+  display: flex;
+  /* border: 2px solid red; */
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  font-family: "Baloo Bhai 2", cursive;
+  color: white;
+  display: block;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: rgb(224, 80, 80);
+  background-color: black;
+}
+
+/* ................................................................ */
+
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 100px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+#home::before {
+  content: "";
+  background: url(../img/pexels-monstera-7144369.jpg) no-repeat center
+    center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 81%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#home h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Baloo Bhai 2", cursive;
+}
+#home p {
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+}
+
+/* Serivces section */
+.container {
+  background-color: #e4b2b2;
+}
+#services {
+  display: flex;
+  margin: 30px;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 5px;
+  margin: 2px 5px;
+  border-radius: 15px;
+  background-color: #ddcfcf;
+}
+#services .box img {
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+#services .box p {
+  font-family: "Grechen Fuemen", cursive;
+}
+/* Clients Section  */
+
+#clients-section {
+  position: relative;
+  /* height: 344px; */
+}
+#clients-section::before {
+  content: "";
+  background: url(../img/pexels-karolina-grabowska-5706426.jpg) no-repeat center
+    center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.79;
+}
+#clients {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-items {
+  padding: 34px;
+}
+#clients img {
+  /* border: 2px solid yellow; */
+  height: 70px;
+}
+
+/* Contact Section  */
+
+#contact {
+  position: relative;
+  /* padding: 34px; */
+}
+#contact::before {
+  content: "";
+  background: url(../img/pexels-negative-space-33999.jpg) no-repeat center
+    center/cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.76;
+}
+#contact-box {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.45rem;
+  font-size: 1.1rem;
+  border-radius: 9px;
+  background-color: #b2a5a5;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Permanent Marker", cursive;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 10px 10px;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 3.3rem;
+  padding: 12px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.h-secondary {
+  font-size: 2.3rem;
+  padding: 12px;
+  font-family: "Grechen Fuemen", cursive;
+}
+.btn {
+  border-radius: 30px;
+  border: 2px solid #4f5059;
+  color: rgb(233 232 232);
+  background-color: #313434;
+  padding: 3px 17px;
+  font-size: 1.4rem;
+  font-family: "Baloo Bhai 2", cursive;
+  margin: 15px;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
